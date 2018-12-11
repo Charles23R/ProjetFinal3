@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Fichier">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#imprimerResultat" text="Imprimer le résultat" />
+                <MenuItem mnemonicParsing="false" onAction="#genererMatrices" text="Créer un nouvel onglet" />
+                  <Menu mnemonicParsing="false" text="Importer">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#creerTabImportation" text="Matrices" />
+                        <MenuItem mnemonicParsing="false" onAction="#importerOpMenu" text="Matrices et opérations" />
+                    </items>
+                  </Menu>
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Opérations">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#multiplicationParScalaire" text="Multiplication par un scalaire" />
+                  <MenuItem mnemonicParsing="false" onAction="#puissance" text="Puissance" />
+                  <MenuItem mnemonicParsing="false" onAction="#transposition" text="Transposition" />
+                  <MenuItem mnemonicParsing="false" onAction="#inversion" text="Inversion" />
+                  <MenuItem mnemonicParsing="false" onAction="#calculDeterminant" text="Déterminant" />
+                  <MenuItem mnemonicParsing="false" onAction="#opeMixtesMenu" text="Autres opérations" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
